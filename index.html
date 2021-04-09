@@ -23,7 +23,10 @@
 
   <meta name="theme-color" content="#fafafa">
 </head>
-<body>
+<body onload="loadLayer()">
+  <div id="bg-layer">
+    <div id="layer"></div>  
+  </div> 
   <nav class="navbar navbar-expand-lg firstColor">
     <div class="container-fluid">
       <a class="navbar-brand link-light" href="index.html">Accueil</a>
@@ -57,9 +60,7 @@
       <p>Nous sommes une Banque qui est ici pour garder votre argent, fondée par Balthazar Picsou lui-même !!</p>
     </div>
   </header>
-  <main>
-    <div id="layer"></div>  
-    <button onclick="loadLayer()"></button>
+  <main> 
     <section class="container">
       <div class="card">
         <h5 class="card-header">Compte n°: 123456789 Compte courant</h5>

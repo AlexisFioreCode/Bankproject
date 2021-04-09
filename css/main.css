@@ -122,7 +122,24 @@ textarea {
     width: 33vw;
     margin-left: 1vw;
   }
-
+  #bg-layer {
+    height: 100vh;
+    width: 100vw;
+    background-color:grey;
+    position: absolute;
+    z-index: 1;
+    opacity: 0.8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #layer{
+    position: absolute;
+    z-index: 2;
+    background-color: white;
+    text-align: center;
+    font-size: 2rem;
+  }
 /* ==========================================================================
    Helper classes
    ========================================================================== */
