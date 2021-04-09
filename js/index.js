@@ -1,4 +1,5 @@
 let layer = document.getElementById("layer");
+let bglayer = document.getElementById("bg-layer");
 function loadLayer() {
     let httpRequest = new XMLHttpRequest();
     httpRequest.onreadystatechange = function() {
@@ -14,5 +15,6 @@ function loadLayer() {
 }
 function removeLayer() {
     if(layer !== null)
-    layer.remove()   
+    layer.remove()
+    bglayer.remove()
 }

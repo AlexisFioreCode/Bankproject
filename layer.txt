@@ -1,9 +1,9 @@
-Consignes de sécurité :
+<ul class="list-group list-group-flush">Consignes de sécurité :
+  <li class="list-group-item"Ne pas divulguer ses codes.</li>
+  <li class="list-group-item">Avoir un mot de passe sécurisé.</li>
+  <li class="list-group-item">Notre entreprise ne vous demandera jamais vos identifiants.</li>
+  <li class="list-group-item">Attention au scam par mail (phishing).</li>
+</ul>
 
-Ne pas divulguer ses codes.
-Avoir un mot de passe sécurisé. 
-Notre entreprise ne vous demdandera jamais vos identifiants.
-Attention au scam par mail (phishing).
-
-
+<button  class="btn btn-danger mb-3" onclick="removeLayer()">J'ai compris</button>
 
