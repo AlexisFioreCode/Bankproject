@@ -23,10 +23,7 @@
 
   <meta name="theme-color" content="#fafafa">
 </head>
-<body onload="loadLayer()">
-  <div id="bg-layer">
-    <div id="layer"></div>  
-  </div> 
+<body">
   <nav class="navbar navbar-expand-lg firstColor">
     <div class="container-fluid">
       <a class="navbar-brand link-light" href="index.html">Accueil</a>
@@ -46,8 +43,8 @@
               Opérations
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="retrait.html">Dépot</a></li>
-              <li><a class="dropdown-item" href="dépot.html">Retrait</a></li>
+              <li><a class="dropdown-item" href="dépot.html">Dépot</a></li>
+              <li><a class="dropdown-item" href="retrait.html">Retrait</a></li>
             </ul>
           </li>
         </ul>
@@ -61,35 +58,22 @@
     </div>
   </header>
   <main> 
-    <section class="container">
-      <div class="card">
-        <h5 class="card-header">Compte n°: 123456789 Compte courant</h5>
-        <div class="card-body">
-          <h5 class="card-title">Votre solde :</h5>
-          <p class="card-text">840€</p>
-          <a href="dépot.html" class="btn btn-primary">Dépot</a>
-          <a href="retrait.html" class="btn btn-primary">Retrait</a>
+    <form class="container border border-secondary">
+        <div class="dropdown ">
+            <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+            Choisissez le compte sur lequel vous souhaitez retirez de l'argent.
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="#">Compte courant</a></li>
+            <li><a class="dropdown-item" href="#">Livret A</a></li>
+            <li><a class="dropdown-item" href="#">Compte Jeune</a></li>
+            </ul>
         </div>
-      </div>
-      <div class="card">
-        <h5 class="card-header">Compte n°: 1234725023 Livret A</h5>
-        <div class="card-body">
-          <h5 class="card-title">Votre solde :</h5>
-          <p class="card-text">244 €</p>
-          <a href="dépot.html" class="btn btn-primary">Dépot</a>
-          <a href="retrait.html" class="btn btn-primary">Retrait</a>
-        </div>
-      </div>
-      <div class="card">
-        <h5 class="card-header">Compte n°: 125625879 Compte Jeune</h5>
-        <div class="card-body">
-          <h5 class="card-title">Votre solde :</h5>
-          <p class="card-text">1536 € </p>
-          <a href="dépot.html" class="btn btn-primary">Dépot</a>
-          <a href="retrait.html" class="btn btn-primary">Retrait</a>
-        </div>
-      </div>
-    </section>
+        <div>
+            <label for="montant">Montant</label>
+            <input type="text">
+        </div>  
+    </form>
   </main>
 
   <footer class="bg-dark text-center text-white">
@@ -123,7 +107,6 @@
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
-  <script src="js/index.js"></script>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
